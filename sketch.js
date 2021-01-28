@@ -85,7 +85,7 @@ var synth2 = new Tone.Synth({
 var feedbackDelay = new Tone.FeedbackDelay("8n", 0.5).toMaster();
 var synth3 = new Tone.FMSynth().connect(feedbackDelay).toMaster();
 
-Tone.Master.volume = -10;
+Tone.Master.volume.value = -10;
 
 
 //--------------
